@@ -35,7 +35,7 @@ http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
 });
 
-//TODO file 收到文件并储存
+//收到文件并储存
 app.post('/saveFile', function (req, res) {
     console.log(req.files);
 
